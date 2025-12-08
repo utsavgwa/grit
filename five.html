@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>grit - five</title>
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=https://utsavgwa.github.io/" />
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #000000;
+            --text-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-family: "Roboto Condensed", sans-serif;
+            text-align: center;
+            font-optical-sizing: auto;
+            font-size: clamp(28px, 6vw, 96px);
+            font-style: normal;
+            line-height: 1.2;
+        }
+    </style>
+</head>
+
+<body onclick="goFullScreen()" ondblclick="exitFullScreen()">
+    <div>
+        there's nothing in the world<br>more powerful than a good story.<br>
+        nothing can stop it.
+    </div>
+    <script>
+        function goFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            }
+        }
+        function exitFullScreen() {
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            }
+        }
+    </script>
+</body>
+
+</html>
