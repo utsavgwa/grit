@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>grit - ten</title>
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=https://utsavgwa.github.io/" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #CF4B00;
+            --text-color: #FCF6D9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-family: "Google Sans", sans-serif;
+            text-align: center;
+            font-weight: 400;
+            font-optical-sizing: auto;
+            font-size: clamp(28px, 6vw, 96px);
+            font-style: normal;
+            line-height: 1.2;
+            font-variation-settings:
+                "GRAD" 0;
+        }
+    </style>
+</head>
+
+<body onclick="goFullScreen()" ondblclick="exitFullScreen()">
+    <div>
+        break the rules<br>do what you like
+    </div>
+    <script>
+        function goFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            }
+        }
+        function exitFullScreen() {
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            }
+        }
+    </script>
+</body>
+
+</html>
