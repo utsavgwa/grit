@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>grit - 11</title>
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=https://utsavgwa.github.io/" />
+
+    <style>
+
+        @font-face {
+            font-family: "Ndot77Font";
+            src: url("./Ndot77.ttf") format("woff2");
+            font-weight: 400;
+            font-style: normal;
+        }
+        :root {
+            --bg-color: #559955;
+            --text-color: #FCF6D9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-color);
+            color: var(--text-color);
+            
+            font-family: "Ndot77Font";
+            text-align: center;
+            font-optical-sizing: auto;
+            font-size: clamp(28px, 6vw, 96px);
+            line-height: 1.2;
+            font-variation-settings:
+                "GRAD" 0;
+        }
+    </style>
+</head>
+
+<body onclick="goFullScreen()" ondblclick="exitFullScreen()">
+    <div>
+        i told you so
+    </div>
+    <script>
+        function goFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            }
+        }
+        function exitFullScreen() {
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            }
+        }
+    </script>
+</body>
+
+</html>
